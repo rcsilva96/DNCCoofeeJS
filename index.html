@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNC Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="navBar">
+            <ul>
+                <li><a href="#"><img src="./assets/img/icon.svg"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#" id="myBtn">Atendimento</a></li>
+              </ul>
+              <button class="btnFazerPedido">Fazer Pedido</button>
+        </div>
+
+    </nav>
+
+    <div class="banner">
+        <img src="./assets/img/banner.svg" width="100%">
+    </div>
+
+    <div class="cardDeck">
+
+        <div class="containerCard" onmouseover="mostraBotao1()" onmouseleave="escondeBotao1()">
+            <img src="./assets/img/produtos/prod1.svg" width="100%">
+            <div class="containerCard">
+                <p>Nossa loja de café se encontra em um lugar, 100% fictício, porém caso se sinta interessado pode vir
+                    tomar um café conosco em nossa sede em São José dos Campos.</p>
+            </div>
+            <br>
+            <center><button class="btnComprar" id="prod1">COMPRAR AGORA</button></center>
+        </div>
+
+        <div class="containerCard" onmouseover="mostraBotao2()" onmouseleave="escondeBotao2()">
+            <img src="./assets/img/produtos/prod2.svg" width="100%">
+            <div class="containerCard">
+                <p>Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, uma boa conversar, bons
+                    amigos e um ambiente sem igual. Aproveite, pois Melhor que a DNC não existe!</p>
+            </div>
+            <br>
+            <center><button class="btnComprar" id="prod2">COMPRAR AGORA</button></center>
+        </div>
+
+        <div class="containerCard" onmouseover="mostraBotao3()" onmouseleave="escondeBotao3()">
+            <img src="./assets/img/produtos/prod3.svg" width="100%">
+            <div class="containerCard">
+                <p>Por que a DNC? Porque podem contar sempre com um serviço genuíno, uma atmosfera acolhedora e uma
+                    incrível xícara de café, torrado por especialistas e preparado de forma enriquecedora.</p>
+            </div>
+            <br>
+            <center><button class="btnComprar" id="prod3">COMPRAR AGORA</button></center>
+        </div>
+
+        <div class="containerCard" onmouseover="mostraBotao4()" onmouseleave="escondeBotao4()">
+            <img src="./assets/img/produtos/prod4.svg" width="100%">
+            <div class="containerCard">
+                <p>A escola especialista em formar talentos, com foco em empregabilidade, migração de carreira e aumento
+                    de performance.</p>
+            </div>
+            <br>
+            <center><button class="btnComprar" id="prod4">COMPRAR AGORA</button></center>
+        </div>
+
+    </div>
+
+    <!-- Código do modal -->
+
+    <div id="modalInfo" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <center>
+
+                <div class="txtModal">
+
+                    <h1>Atendimento</h1>
+
+                    <p>Rua José de Alencar, 111, Centro <br>
+                        CEP: 12209-000 | +55 (11) 3333-8000
+                    </p>
+
+                </div>
+
+                <button class="btnContato">ENTRAR EM CONTATO</button>
+            </center>
+
+            <br><br>
+
+        </div>
+
+    </div>
+
+
+    <br><br><br><br>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
